@@ -70,7 +70,6 @@
    `(,(regexp-opt (umka-types) 'symbols) . font-lock-type-face)
    `(,(regexp-opt (umka-builtin) 'symbols) . font-lock-builtin-face)))
 
-;;; TODO: backport this to simpc-mode
 (defun umka--previous-non-empty-line ()
   "Returns either NIL when there is no such line or a pair (line . indentation)"
   (save-excursion
