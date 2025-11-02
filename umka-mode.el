@@ -95,7 +95,7 @@
            (string-trim-right
             (thing-at-point 'line t)))
           ;; If after moving backwards for this long we still look at an empty
-          ;; line we by definition didn't find the previous empty line.
+          ;; line we by definition didn't find the previous non-empty line.
           nil
         ;; We found the previous non-empty line!
         (cons (thing-at-point 'line t)
